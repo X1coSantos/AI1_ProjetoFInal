@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <title>Ola </title>
+</head>
+
+<body onload="renderTime();" id="body">
+
+    <div class="navbar">
+        <a class="la"></a>
+        <a href="#HOME">HOME</a>
+        <a href="#rotasTuristicas">Rotas</a>
+        <a href="#pontosInfo">Pontos de Informação</a>
+        <a href="#galeriaImagens">Galeria</a>
+        <a href="#contacto">Contacto</a>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown
+
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <a style="float:right">
+            <p id="horas"></p>
+        </a>
+    </div>
+
+    <header id="HOME" class="header">
+        <img src="imgs/arrow.png" class="arrowLeft" id="prevBtn">
+        <img src="imgs/arrow.png" class="arrowRight" id="nextBtn">
+
+        <div class="slider-container">
+            <div class="slider-images">
+                <img src="imgs/slider/5.jpg" id="lastClone">
+                <img src="imgs/slider/1.png">
+                <img src="imgs/slider/2.jpg">
+                <img src="imgs/slider/3.jpg">
+                <img src="imgs/slider/4.jpg">
+                <img src="imgs/slider/5.jpg">
+                <img src="imgs/slider/1.png" id="firstClone">
+            </div>
+        </div>
+        <div class="text-container">
+            <div id="MAINCENAS">
+                <span class="textoGrande">Viseu - Melhor cidade para viver</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="rotasTuristicas" class="imagens-abaixo-slider">
+        <div class="titulo-section">
+            <span>Rotas turisticas</span>
+        </div>
+        <div class="row">
+            <div class="thumb-container">
+                <div class="thumb">
+                    <div class="thumb-container-img">
+                        <img class="thumb-img" src="imgs/rotas/rota1.jpeg" >
+                        <span class="thumb-txt"> ROTA #1 </span>
+                        <span class="thumb-maisInfo"> Mais INFO</span>
+                        <span class="thumb-txtDescricao"> Descrição da rota 1, é aqui onde se vai descrever a rota 1. Algum texto apenas para testar os visuais xd</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <span> ROTA #2 </span>
+                </div>
+                <div class="thumb">
+                    <span> ROTA #3 </span>
+                </div>
+                <div class="thumb">
+                    <span> ROTA #4 </span>
+                </div>
+            </div>
+
+
+            <!--<div class="column">
+                <div class="container">
+                    <img class="imgRota" src="imgs/rotas/rota1.jpeg" >
+                    <span class="infos-img">teste</span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="img-container">
+                    <img class="imgRota" src="imgs/rotas/rota2.jpg" >
+                </div>
+            </div>
+            <div class="column">
+                <div class="img-container">
+                    <img class="imgRota" src="imgs/rotas/rota3.jpg" >
+                </div>
+            </div>-->
+        </div>
+        <div class="more_content"><a href="#">- Mais -</a></div>
+    </section>
+
+    <section  id="pontosInfo" class="pontos-informaçao" clearfix>
+
+        <div class="image-left">
+            <div class="pi-content">
+                <div>
+                    <img class="Pimg" src="imgs/pontosInfo/1.png">
+                </div>
+                <span class="t1">
+                    Câmara Municipal
+                </span>
+                <div class="texto1">
+                    <p>A Câmara Municipal de Viseu é o órgão autárquico deste concelho e tem por missão definir e
+                        executar políticas tendo em vista a defesa dos interesses e satisfação das necessidades da
+                        população local.
+                        Nesse sentido, cabe-lhe promover o desenvolvimento do município em todas as áreas da vida, como
+                        a saúde, a educação, a ação social e habitação, o ambiente e saneamento básico, o ordenamento do
+                        território e urbanismo, os transportes e comunicações, o abastecimento público, o desporto e
+                        cultura, a defesa do consumidor e a proteção civil. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-right">
+            <div class="pi-content2">
+                <div>
+                    <img class="Pimg2" src="imgs/pontosInfo/2.png">
+                </div>
+                <span class="t2">
+                    Loja do cidadão
+                </span>
+                <div class="texto2">
+                    <p>A Loja de Cidadão é um conceito de prestação de serviços públicos que reúne no mesmo espaço várias entidades públicas e privadas, com o objetivo de facilitar a relação dos cidadãos e das empresas com a administração pública.
+                        Os novos modelos de atendimento foram desenvolvidos para dar resposta às necessidades dos cidadãos e das empresas. Os utentes valorizam este conceito integrado e estão globalmente satisfeitos com o serviço prestado, percecionando como boa a qualidade do atendimento e destacando a simpatia e profissionalismo dos funcionários. Nas razões assinaladas pelos cidadãos como preferência pela Lojas de Cidadão destaca-se a concentração dos serviços num único local.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+    </section>
+
+    <section id="galeriaImagens">
+        <div class="titulo-section">
+            <a>Galeria</a>
+            <div class="cont2" >
+                    <div class="gallery">
+                        <a><img class="imgGal imgT" src="imgs/gale1.jpg"></a>
+                    </div>
+                    <div class="gallery">
+                        <a><img class="imgGal imgT" src="imgs/gale2.jpg"></a>
+                    </div>
+                    <div class="gallery">
+                        <a><img class="imgGal imgT" src="imgs/gale3.jpg"></a>
+                    </div>
+                    <div class="gallery">
+                        <a><img class="imgGal imgT" src="imgs/gale4.jpg"></a>
+                    </div>
+                    <div class="gallery">
+                        <a><img class="imgGal imgT" src="imgs/gale1.jpg"></a>
+                    </div>
+                    <div class="gallery">
+                        <a><img class="imgGal imgT" src="imgs/gale3.jpg"></a>
+                    </div>
+                    <div class="gallery">
+                        <a><img class="imgGal imgT" src="imgs/gale4.jpg"></a>
+                    </div>
+                    <div class="gallery">
+                        <a><img class="imgGal imgT" src="imgs/gale5.jpg"></a>
+                    </div>
+                    <div class="gallery">
+                        <a><img class="imgGal imgT" src="imgs/gale2.jpg"></a>
+                    </div>
+                    <div class="gallery">
+                        <a><img class="imgGal imgT" src="imgs/gale3.jpg"></a>
+                    </div>
+                    <div class="gallery">
+                        <a><img class="imgGal imgT" src="imgs/gale4.jpg"></a>
+                    </div>
+                    <div class="gallery">
+                        <a><img class="imgGal imgT" src="imgs/gale5.jpg"></a>
+                    </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div style="width: 50%; margin: auto;margin-top: 100px;">
+            <div id="formulario_contacto_div"></div>
+            <div id="motivo"></div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="footer-all">
+        <div class="footer-left">
+            <h3>Somos<span>Viseu</span></h3>
+            <p class="footer-links">
+                <a href="#">link1</a>
+                <a href="#">link2</a>
+                <a href="#">link3</a>
+                <a href="#">link4</a>
+            </p>
+            <p class="footer-copyright">COPYRIGHT ©️ 2020 ESTGV VISEU</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <img src="imgs/484169.png">
+                <p><span>Repeses</span> Portugal, Viseu</p>
+            </div>
+
+            <div>
+                <img src="imgs/phoneload.png">
+                <p>999-999-999</p>
+            </div>
+
+            <div>
+                <img src="imgs/email.png">
+                <p><a href="">estgvnnnnn@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About us</span>
+                <a>Somos só 3 estudantes da estgv a tentar passar a cadeira de Aplicações para a Internet I com um
+                    website original sobre a cidade de Viseu!</a>
+            </p>
+        </div>
+    </footer>
+
+    <div id="modalImagens" class="modal">
+        <img class="modal-content" id="modalImagens_img">
+    </div>
+
+    <div id="modalMapas" class="modal-mapas">
+        <span id="titulo-modal2"></span>
+        <img class="modal-mapas-content" id="img012">
+    </div>
+    <script src="js/relogio.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/galeria.js"></script>
+    <script src="js/mapas.js"></script>
+    <script src="js/reactForm.js"></script>
+</body>
+
+</html>
