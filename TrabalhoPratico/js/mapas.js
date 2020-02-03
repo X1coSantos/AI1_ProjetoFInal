@@ -7,12 +7,14 @@ var imgMapas = document.getElementsByClassName("thumb");
 
 var rotasTitulo = document.getElementById("rotasInfo-titulo");
 var rotasImg = document.getElementById("rotasPainelEsquerdoIMG");
+var rotasDescricao = document.getElementById("rotasPainelDireito");
 
 for ( var i = 0; i < imgMapas.length; i++ ) (function(i){ 
 	imgMapas[i].onclick = function() {
 		modalMapas.style.display = "block";
-		rotasTitulo.textContent = "Titulo de teste";
-		rotasImg.src = imgMapas[i].children[0].children[0].src
+		rotasTitulo.innerHTML = imgMapas[i].children[0].children[1].innerHTML;
+		rotasImg.src = imgMapas[i].children[0].children[0].src;
+		rotasDescricao.innerHTML = imgMapas[i].children[0].children[4].innerHTML;
 	}
   })(i);
 

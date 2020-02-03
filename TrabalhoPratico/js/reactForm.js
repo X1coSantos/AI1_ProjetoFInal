@@ -1,5 +1,5 @@
-var motivos = ["Isto", "Aquilo", "Outro"];
-var limite_chars = 250;
+var limite_chars = 300;
+var motivos = ["Dúvidas", "Ola", "Outro"];
 
 var Registos;
 var select_motivo;
@@ -79,11 +79,9 @@ class form_contacto extends React.Component {
             telefone: this.state.telefone,
             mensagem: this.state.mensagem
         }
-    
         Registos.push(contacto);
-    
         localStorage.setItem("Dados_form_contacto_ant", JSON.stringify(Registos));
-        alert("Mensagem submetida com sucesso!\nIremos contactá-lo em breve");
+        alert("Mensagem recebida!\nIremos contactá-lo em breve");
     }
 
     limpar_formulario(){
@@ -96,37 +94,28 @@ class form_contacto extends React.Component {
         });
     }
 
-    
     render(){
         return (
             React.createElement("form", {id: "formulario_contacto", onSubmit: this.submeter_formulario}, [
                 React.createElement("h2", {id: "titulo"}, "Contacte-nos"),
                 React.createElement("div", {className:"dados"}, [
-                    React.createElement("label", null, "Nome *"),
-                    React.createElement("input", {id: "nome", type: "text", required:"required", value: this.state.nome, onChange: this.handleChange, placeholder:"Introduza o seu nome"}, null)
+                    React.createElement("input", {id: "nome", type: "text", required:"required", value: this.state.nome, onChange: this.handleChange, placeholder:"Nome"}, null)
                 ]),
                 React.createElement("div", {className:"dados"}, [
-                    React.createElement("label", null, "Email *"),
-                    React.createElement("input", {id: "email", type: "email", willvalidate: "true", required:"required", value: this.state.email, onChange: this.handleChange, placeholder:"exemplo@exemplo.com"}, null)
+                    React.createElement("input", {id: "email", type: "email", willvalidate: "true", required:"required", value: this.state.email, onChange: this.handleChange, placeholder:"Email"}, null)
                 ]),
                 React.createElement("div", {className:"dados"}, [
-                    React.createElement("label", null, "Telefone"),
-                    React.createElement("input", {id: "telefone", pattern: "[0-9]{9}", maxLength: "9", type: "text", value: this.state.telefone, onChange: this.handleChange, placeholder:"911111111"}, null)
+                    React.createElement("input", {id: "telefone", pattern: "[0-9]{9}", maxLength: "9", type: "text", value: this.state.telefone, onChange: this.handleChange, placeholder:"Telefone(opcional)"}, null)
                 ]),
                 React.createElement("div", {className:"dados"}, [
-                    React.createElement("label", null, "Motivo de contacto *"),
+                    React.createElement("textarea", {id: "mensagem", maxLength: "" + limite_chars, required:"required", value: this.state.mensagem, onChange: this.handleChange, placeholder:"Escreva o seu problema(300)"}, null)
+                ]),
+                React.createElement("div", {className:"dados"}, [
                     React.createElement("select", {id: "motivo", value: this.state.motivo, required:"required", onChange: this.handleChange}, [
                         React.createElement("option", {hidden:"hidden", value: ""}, "Selecione um motivo"),
-                        motivos.map((aux) => {
-                        return React.createElement("option", {value: aux}, aux)
-                        })
+                        motivos.map((aux) => { return React.createElement("option", {value: aux}, aux) })
                     ])
                 ]),
-                React.createElement("div", {className:"dados"}, [
-                    React.createElement("label", null, "Mensagem *"),
-                    React.createElement("textarea", {id: "mensagem", type: "text", maxLength: "" + limite_chars, required:"required", value: this.state.mensagem, onChange: this.handleChange, placeholder:"Conte-nos o seu problema em 250 caracteres!"}, null)
-                ]),
-                React.createElement("p", {id: "aviso"}, "* Campos de preenchimento obrigatório"),
                 React.createElement("div", {className:"botoes"}, [
                     React.createElement("input", {type: "submit", value: "Submeter", onClick: set_mensagens_erro}, null),
                     React.createElement("input", {type: "reset", value: "Limpar", onClick: this.limpar_formulario}, null)
@@ -134,7 +123,6 @@ class form_contacto extends React.Component {
             ])
         );
     }
-
 }
 
 ReactDOM.render(React.createElement(form_contacto), document.getElementById("formulario_contacto_div"));

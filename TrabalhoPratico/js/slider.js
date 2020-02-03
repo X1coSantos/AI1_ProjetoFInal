@@ -1,22 +1,12 @@
 const slide = document.querySelector(".slider-images");
 const slideImages = document.querySelectorAll(".slider-images img");
-
-// console.table(slideImages);
-
-// Buttons
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
-
 let counter = 0;
 let size = slideImages[0].clientWidth;
-// console.table(slideImages[0]);
-console.log("tamanho da imagem: ", size);
-// console.log(size);
 
 slide.style.transform = "translateX(" + (-size * counter + 1) + "px";
 
-
-// Button listeners
 nextBtn.addEventListener('click', ()=>{
     size = slideImages[0].clientWidth;
     if(counter >= slideImages.length - 1) return;
@@ -50,9 +40,6 @@ slide.addEventListener("transitionend", ()=>{
     }
 });
 
-var a = "a";
-
-
 var counter2 = 0;
 setInterval(function(){
     if(counter2 > slideImages.length - 1){
@@ -60,7 +47,6 @@ setInterval(function(){
     }
     slide.style.transition = "transform 0.4s ease-in-out";
     slide.style.transform = "translateX(" + (-size * counter2++) + "px";
-    
 }, 4000);
 
 

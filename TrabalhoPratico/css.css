@@ -1,6 +1,7 @@
 *,html {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -361,13 +362,11 @@ body {
   overflow: auto;
 }
 
-
 .pontos-informaçao{
   width: 100%;
-  height: auto;
-  /* text-align: center; */
+  text-align: center;
   padding: 75px 0 75px 0;
-  background-color: #f7f7f7;
+  background-color: #ebebeb;
 }
 
 .more_content{
@@ -376,10 +375,12 @@ body {
 }
 
 .Pimg{
+  width: 100%;
   float: left;
 }
 
 .Pimg2{
+  width: 100%;
   float: right;
 }
 
@@ -629,8 +630,24 @@ footer div img{
   padding: 20px;
 }
 
+#rotasPainelEsquerdo{
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+
 #rotasPainelEsquerdoIMG{
-  
+  width: 100%;
+  height: 300px;
+}
+
+#rotasPainelDireito{
+  background-color: #162e44;
+  float: left;
+  margin-left: 20px;
+  width: 65%;
+  height: 100%;
+  overflow: auto;
 }
 
 /* Modal Content (Image) */
@@ -751,4 +768,113 @@ footer div img{
   font-size: small;
   cursor: pointer;
   visibility: hidden;
+}
+
+.pontosInformacao-container{
+  width: 80%;
+  margin: 0 auto;
+  background-color: red;
+  overflow: auto;
+  padding: 10px 5px 5px 5px;
+  display: flex;
+}
+
+.pontosInformacao-PontoImg{
+  display: inline-block;
+  width: 30%;
+  margin: 0 auto;
+  margin-left: 10px;
+  background-color: rgba(0, 0, 0, 0.178);
+  overflow: hidden;
+}
+
+.pontosInformacao-PontoDesc{
+  display: inline-block;
+  width: 65%;
+  margin: 0 auto;
+  margin-left: 10px;
+  background-color: rgba(0, 0, 0, 0.164);
+  overflow: hidden;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 20px;
+}
+
+.pontosInformacao-PontoDesc h1{
+  margin-bottom: 30px;
+}
+
+
+#formulario_contacto{
+  text-align: center;
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#formulario_contacto input[type="text"], #formulario_contacto input[type="email"]{
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#mensagem{
+  height: 100px;
+  width: 100%;
+  resize: none;
+}
+
+#titulo{
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+
+
+.dados{
+ 
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  
+}
+
+.botoes input{
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #162e44;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+  
+}
+
+.botoes input:hover{
+  background: #01b3a7;
+  
+  transition: background-color 0.2s ease-in-out;
+}
+
+form{
+  
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 30px;
+    color: #777;
+    background: white;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  
 }
