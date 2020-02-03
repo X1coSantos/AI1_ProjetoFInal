@@ -596,7 +596,6 @@ footer div img{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
   left: 15%;
   top: 15%;
   width: 70%; /* Full width */
@@ -604,6 +603,34 @@ footer div img{
   overflow: auto; /* Enable scroll if needed */
   background-color: #777;
   border: 1px solid red;
+  padding: 20px;
+}
+
+#rotasInfo-container-titulo{
+  width: 100%;
+  text-align: center;
+  background-color: red;
+}
+
+#rotasInfo-titulo{
+  font-size: 2em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#rotasPrincipal-container{
+  width: 100%;
+  height: auto;
+  background-color: #01b3a7;
+  overflow: auto;
+}
+
+#rotasPrincipal-container{
+  margin-top: 30px;
+  padding: 20px;
+}
+
+#rotasPainelEsquerdoIMG{
+  
 }
 
 /* Modal Content (Image) */
