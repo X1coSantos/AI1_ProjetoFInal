@@ -329,7 +329,7 @@ body {
   width: 100%;
   text-align: center;
   padding: 75px 0 75px 0;
-  background-color: #d0d0d0;
+  background-color: #f7f7f7;
 }
 
 .row{
@@ -366,7 +366,7 @@ body {
   width: 100%;
   text-align: center;
   padding: 75px 0 75px 0;
-  background-color: #ebebeb;
+  background-color: white;
 }
 
 .more_content{
@@ -408,11 +408,7 @@ body {
   margin-left: 59%;
 }
 
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-}
+
 
 
 
@@ -424,7 +420,7 @@ div.gallery {
 
 div.gallery {
   margin: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #162e44;
   float: left;
   min-width: 180px;
   height: 132px;
@@ -515,7 +511,12 @@ footer div img{
 #galeriaImagens{
   padding-bottom: 100px;
   text-align: center;
+  background-color: #f1f1f1;
   
+}
+
+#contactos{
+  text-align: center;
 }
 
 /* Style the Image Used to Trigger the Modal */
@@ -602,26 +603,27 @@ footer div img{
   width: 70%; /* Full width */
   height: 70%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #777;
-  border: 1px solid red;
+  background-color: #01b3a7;
+  border: 1px solid #162e44;
   padding: 20px;
 }
 
 #rotasInfo-container-titulo{
   width: 100%;
   text-align: center;
-  background-color: red;
+ 
 }
 
 #rotasInfo-titulo{
   font-size: 2em;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
 }
 
 #rotasPrincipal-container{
   width: 100%;
   height: auto;
-  background-color: #01b3a7;
+  background-color: white;
   overflow: auto;
 }
 
@@ -642,7 +644,7 @@ footer div img{
 }
 
 #rotasPainelDireito{
-  background-color: #162e44;
+  background-color: white;
   float: left;
   margin-left: 20px;
   width: 65%;
@@ -689,7 +691,7 @@ footer div img{
 .thumb-container{
   width: 80%;
   margin: 0 auto;
-  background-color: red;
+  
   overflow: auto;
   padding: 5px;
 }
@@ -739,7 +741,7 @@ footer div img{
   width: 100%;
   left: 0px;
   top: 0%;
-  background-color: greenyellow;
+  background-color: #01b3a7;
 }
 
 .thumb-txtDescricao{
@@ -747,7 +749,7 @@ footer div img{
   width: 100%;
   left: 0px;
   bottom: 0px;
-  background-color: greenyellow;
+  background-color: #01b3a7;
   font-size: small;
   visibility: hidden;
   padding: 10px;
@@ -773,7 +775,7 @@ footer div img{
 .pontosInformacao-container{
   width: 80%;
   margin: 0 auto;
-  background-color: red;
+  background-color: #f1f1f1;
   overflow: auto;
   padding: 10px 5px 5px 5px;
   display: flex;
@@ -798,10 +800,12 @@ footer div img{
   text-align: justify;
   text-justify: inter-word;
   padding: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .pontosInformacao-PontoDesc h1{
   margin-bottom: 30px;
+  font-family: sans-serif;
 }
 
 
@@ -809,7 +813,6 @@ footer div img{
   text-align: center;
   background: #F9F9F9;
   padding: 25px;
-  margin: 150px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 

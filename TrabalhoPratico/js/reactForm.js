@@ -1,5 +1,5 @@
 var limite_chars = 300;
-var motivos = ["Dúvidas", "Ola", "Outro"];
+var motivos = ["Dúvidas", "Informações", "Erros"];
 
 var Registos;
 var select_motivo;
